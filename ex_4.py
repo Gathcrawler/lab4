@@ -1,10 +1,10 @@
 from librip.decorators import print_result
 
-
 # Необходимо верно реализовать print_result
 # и задание будет выполнено
 
-@print_result#декоратор
+
+@print_result
 def test_1():
     return 1
 
@@ -21,15 +21,10 @@ def test_3():
 
 @print_result
 def test_4():
-    return [1, 2, 3]\
-
-@print_result
-def test_5(a,b=0):
-    return (a+b)
+    return [1, 2]
 
 
 test_1()
 test_2()
 test_3()
 test_4()
-test_5(2,b=2)
